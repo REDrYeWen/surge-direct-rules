@@ -1,0 +1,40 @@
+# 自定义直连规则（来自用户现有配置，未带策略，用作 RULE-SET 时指定 DIRECT）
+# 注意：源文件中 Talkatone 段的几个域名（inmobi.com、kochava.com 等）在拦截库中也以 REJECT 出现，存在冲突，详见本仓库 README。
+
+# Talkatone
+DOMAIN-SUFFIX,agkn.com
+DOMAIN-SUFFIX,cohere.com
+DOMAIN-SUFFIX,crashlytics.com
+DOMAIN-SUFFIX,inner-active.mobi
+
+# 局域网和内网规则
+DOMAIN-SUFFIX,mobilefuse.com
+DOMAIN-SUFFIX,talkatone.com
+DOMAIN-SUFFIX,asusrouter.com
+DOMAIN-SUFFIX,instant.arubanetworks.com
+DOMAIN-SUFFIX,router.asus.com
+DOMAIN-SUFFIX,setmeup.arubanetworks.com
+
+# IP 地址规则
+IP-CIDR,205.164.56.0/24
+IP-CIDR,216.172.154.0/24
+IP-CIDR,50.117.27.0/24
+IP-CIDR,63.251.124.0/24
+IP-CIDR,69.46.75.0/24
+IP-CIDR,10.0.0.0/8,no-resolve
+IP-CIDR,172.16.0.0/12,no-resolve
+IP-CIDR,192.168.0.0/16,no-resolve
+IP-CIDR,127.0.0.0/8,no-resolve
+IP-CIDR,169.254.0.0/16,no-resolve
+IP-CIDR,192.0.0.0/24,no-resolve
+IP-CIDR,192.0.2.0/24,no-resolve
+IP-CIDR,198.18.0.0/15,no-resolve
+
+# IPv6 地址规则
+IP-CIDR6,::/127
+IP-CIDR6,fc00::/7,no-resolve
+IP-CIDR6,fe80::/10,no-resolve
+IP-CIDR6,ff00::/8,no-resolve
+
+# 特殊反向解析的域名
+DOMAIN-SUFFIX,0.in-addr.arpa

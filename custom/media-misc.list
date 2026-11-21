@@ -1,0 +1,7 @@
+# 自定义直连规则（来自用户现有配置，未带策略，用作 RULE-SET 时指定 DIRECT）
+
+# 奶昔
+DOMAIN,sub.nexconvert.com
+DOMAIN,media.nijigem.by // Added for: media.nijigem.by:443
+
+# 从抓包/日志手动添加的域名（源文件末尾两行，原始用途未标注）
