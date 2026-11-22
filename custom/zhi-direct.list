@@ -1,0 +1,19 @@
+# 芷：微信/苹果系直连域名（来自用户现有配置 雯/芷.txt，2026-11-22 并入）
+# 未带策略，用作 RULE-SET 时指定直连侧策略组（如莫比乌斯）。
+
+DOMAIN,szshort.weixin.qq.com
+DOMAIN,cdn-apple.com
+DOMAIN,iosapps.itunes.apple.com
+DOMAIN,szextshort.weixin.qq.com
+DOMAIN,szminorshort.weixin.qq.com
+DOMAIN,mp.weixin.qq.com
+DOMAIN,testflight.apple.com
+DOMAIN-SUFFIX,file.myqcloud.com //王者营地图片CDN
+DOMAIN-SUFFIX,www.volcengine.com // Added for: www.volcengine.com:443
+DOMAIN,psstatic.cdn.bcebos.com // Added for: psstatic.cdn.bcebos.com:443
+DOMAIN,ms.bdstatic.com // Added for: ms.bdstatic.com:443
+DOMAIN-SUFFIX,bcebos.com // Added for: ppui-static-wap.cdn.bcebos.com:443
+DOMAIN-SUFFIX,doubao.com // Added for:
+IP-CIDR,43.163.180.182/32 // Added for: http://43.163.180.182/mmtls/50454ad1
+IP-CIDR,43.163.180.182/32 // Added for: http://43.163.180.182/mmtls/5041f556
+DOMAIN,tos-lf-x.snssdk.com // Added for: tos-lf-x.snssdk.com:443
