@@ -1,0 +1,11 @@
+# Claude（Anthropic）分流规则 —— 含语音模式所需的媒体服务器 IP
+# 用法：在配置中以 RULE-SET 引用，指向一个已关闭 QUIC 屏蔽的策略组
+# （如茶茶.conf 的 Claude 组：同糖纸订阅 + external-policy-modifier="block-quic=off"）。
+# 引用行须放在广告 DOMAIN-SET 之前：statsig.anthropic.com 在拦截大表内，靠顺序在此优先放行。
+# 来历：2026-11-22 排查 Claude 语音连不上得出 —— 信令 QUIC 被 Surge 自适应屏蔽掐断，
+# 且语音 WebRTC 媒体服务器是裸 IP、不走域名规则，原落 FINAL→香港组连接失败。
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
+# 语音 WebRTC 媒体服务器（谷歌云 ASN 396982，STUN 3478 + 443；IP 可能在谷歌云池内轮换，失效时查日志更新）
+IP-CIDR,34.186.249.240/32,no-resolve
