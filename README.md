@@ -25,7 +25,6 @@ RULE-SET,<本仓库 raw 地址>/rulesets/loyalsoldier-private.txt,DIRECT
 | talkatone-lan-private.list | Talkatone 相关域名、路由器/内网域名、私有与保留 IP 段（带 no-resolve）、IPv6 私有段、in-addr.arpa 反向解析后缀 |
 | media-misc.list | 「奶昔」段的几个媒体/订阅域名与从抓包手动添加的域名（baidu.com 后缀也在其中，按源文件位置归入直连，使用时请留意其覆盖面） |
 | zhi-direct.list | 「芷」：微信/苹果系直连域名 16 条（来自用户现行配置 雯/芷.txt，2026-11-22 并入）；已核对，与拦截库合并集无覆盖冲突 |
-| claude.list | Claude（Anthropic）分流 4 条：3 个域名后缀 + 语音 WebRTC 媒体服务器 IP（谷歌云 34.186.249.240/32）。须指向已关闭 QUIC 屏蔽的策略组、且引用顺序在广告 DOMAIN-SET 之前（2026-11-22 语音故障排查产物，文件头有完整说明） |
 
 ## 已知冲突（与拦截库之间）
 
