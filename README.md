@@ -1,4 +1,4 @@
-# surge-direct-rules（私有）
+# surge-direct-rules
 
 Surge 直连（放行）规则库。与拦截库 [surge-reject-rules] 配套使用。
 本库所有文件均为「未带策略」的规则集（ruleset）格式，在 Surge 配置中通过 RULE-SET 引用时指定 DIRECT 策略，例如：
